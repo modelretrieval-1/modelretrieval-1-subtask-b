@@ -84,3 +84,17 @@ topicID Q0 docID Rank Score RunID
 ...
 ```
 
+## Evaluation
+
+This subtask uses **MRR (Mean Reciprocal Rank)** for evaluation.
+
+For each query image, find the rank position of the correct model and compute its reciprocal rank.
+
+$$
+\mathrm{MRR} = \frac{1}{|Q|}\sum_{q \in Q} \frac{1}{\mathrm{rank}_q}
+$$
+
+- $|Q|$: number of query images
+- $\mathrm{rank}_q$: rank position of the correct model for query $q$
+
+
