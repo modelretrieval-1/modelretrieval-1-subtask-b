@@ -63,7 +63,61 @@ https://docs.astral.sh/uv/getting-started/installation/
 uv sync
 ```
 
-### 3. Run the baseline notebook
+### 3. Set up Unsplash API and download content images
+
+Before downloading content images, prepare your Unsplash API credentials:
+
+1. Create an Unsplash account: https://unsplash.com/join
+2. Create an Unsplash app: https://unsplash.com/oauth/applications
+3. Copy your **Access Key** from the app settings
+
+Then run the downloader command.
+
+Download specific content images:
+
+```bash
+python main.py download_content_images --image-id 1 --image-id 2 --access-key <YOUR_UNSPLASH_ACCESS_KEY>
+```
+
+Download all content images:
+
+```bash
+python main.py download_content_images --all --access-key <YOUR_UNSPLASH_ACCESS_KEY>
+```
+
+You can also set the key as an environment variable:
+
+```bash
+export UNSPLASH_ACCESS_KEY=<YOUR_UNSPLASH_ACCESS_KEY>
+python main.py download_content_images --all
+```
+
+Downloaded files are saved to `data/content-images/` using zero-padded IDs such as `01.jpg`, `02.jpg`, `03.jpg`, etc.
+
+### 4. Set up Civitai token and download models
+
+Before downloading models, prepare your Civitai credentials:
+
+1. Create a Civitai account: https://civitai.com/
+2. Generate a Civitai API token from your account settings
+
+Then run the model downloader command.
+
+Download specific models:
+
+```bash
+python main.py download_models --civitai-token <YOUR_CIVITAI_TOKEN> --model-id 1 --model-id 02 --model-id 10
+```
+
+Download all models:
+
+```bash
+python main.py download_models --civitai-token <YOUR_CIVITAI_TOKEN>
+```
+
+Downloaded model files are saved to `data/models/` using zero-padded IDs such as `01.safetensors`, `02.safetensors`, `03.safetensors`, etc.
+
+### 5. Run the baseline notebook
 
 Open and run:
 
