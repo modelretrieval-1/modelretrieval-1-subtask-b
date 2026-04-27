@@ -16,9 +16,9 @@ In other words, this is a model retrieval problem where each query corresponds t
 data/
   train/
     {model_id}/
-      {image_id}.png
+      train-{content_image_id}-{model_id}.png
   test/
-    {image_id}.png
+    test-{content_image_id}-{identifier}.png
 
   models.csv
   content-images.csv
