@@ -53,7 +53,7 @@ Run the downloader command.
 Download specific content images:
 
 ```bash
-python main.py download_content_images --image-id 1 --image-id 2 --access-key <YOUR_UNSPLASH_ACCESS_KEY>
+uv run python main.py download_content_images --image-id 1 --image-id 2 --access-key <YOUR_UNSPLASH_ACCESS_KEY>
 ```
 
 **OR**
@@ -61,7 +61,7 @@ python main.py download_content_images --image-id 1 --image-id 2 --access-key <Y
 Download all content images:
 
 ```bash
-python main.py download_content_images --all --access-key <YOUR_UNSPLASH_ACCESS_KEY>
+uv run python main.py download_content_images --all --access-key <YOUR_UNSPLASH_ACCESS_KEY>
 ```
 
 **OR**
@@ -70,7 +70,7 @@ You can also set the key as an environment variable:
 
 ```bash
 export UNSPLASH_ACCESS_KEY=<YOUR_UNSPLASH_ACCESS_KEY>
-python main.py download_content_images --all
+uv run python main.py download_content_images --all
 ```
 
 Downloaded files are saved to `data/content-images/` using zero-padded IDs such as `01.jpg`, `02.jpg`, `03.jpg`, etc.
@@ -89,7 +89,7 @@ Then run the model downloader command.
 Download all models:
 
 ```bash
-python main.py download_models --civitai-token <YOUR_CIVITAI_TOKEN>
+uv run python main.py download_models --civitai-token <YOUR_CIVITAI_TOKEN>
 ```
 
 **OR**
@@ -97,7 +97,7 @@ python main.py download_models --civitai-token <YOUR_CIVITAI_TOKEN>
 Download specific models:
 
 ```bash
-python main.py download_models --civitai-token <YOUR_CIVITAI_TOKEN> --model-id 1 --model-id 02 --model-id 10
+uv run python main.py download_models --civitai-token <YOUR_CIVITAI_TOKEN> --model-id 1 --model-id 02 --model-id 10
 ```
 
 
