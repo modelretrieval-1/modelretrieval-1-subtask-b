@@ -10,25 +10,31 @@ Given a query image, rank image style transfer LoRA models by their ability to r
 
 ## Quick Start
 
-### 1. Install uv
+### 1. Clone this repo
+
+```bash
+git clone https://github.com/modelretrieval-1/modelretrieval-1-subtask-a.git
+```
+
+### 2. Install uv
 
 Follow the official guide:
 https://docs.astral.sh/uv/getting-started/installation/
 
-### 2. Sync dependencies
+### 3. Sync dependencies
 
 ```bash
 uv sync
 ```
 
-### 3. Run the baseline notebook
+### 4. Run the baseline notebook
 
 Open and run:
 
 - `notebooks/baseline.ipynb`
 
 
-### 4. (Optional) Set up Unsplash API and download content images
+### 5. (Optional) Set up Unsplash API and download content images
 
 **Note: content images are not strictly required**
 
@@ -67,7 +73,7 @@ python main.py download_content_images --all
 
 Downloaded files are saved to `data/content-images/` using zero-padded IDs such as `01.jpg`, `02.jpg`, `03.jpg`, etc.
 
-### 4. Set up Civitai token and download models
+### 6. Set up Civitai token and download models
 
 **Note: models are not strictly required**
 
