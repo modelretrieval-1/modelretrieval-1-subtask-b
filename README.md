@@ -12,6 +12,8 @@ Given a query image, rank image style transfer LoRA models by their ability to r
 
 ### 1. Clone this repo
 
+**Note:** Cloning may take a long time due to the large number of query images
+
 ```bash
 git clone https://github.com/modelretrieval-1/modelretrieval-1-subtask-a.git
 ```
@@ -73,7 +75,7 @@ python main.py download_content_images --all
 
 Downloaded files are saved to `data/content-images/` using zero-padded IDs such as `01.jpg`, `02.jpg`, `03.jpg`, etc.
 
-### 6. Set up Civitai token and download models
+### (Optional) 6. Set up Civitai token and download models
 
 **Note: models are not strictly required**
 
