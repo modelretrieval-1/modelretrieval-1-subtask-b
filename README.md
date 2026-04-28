@@ -127,7 +127,7 @@ notebooks/
 |---|---|
 | `data/models.csv` | List of image style transfer LoRA models. |
 | `data/content-images.csv` | List of content images used to generate query images. |
-| `data/train.csv` | Training metadata with `image_id`, `model_id`, `content_image_id`, and `best_seed`. |
+| `data/train.csv` | Training metadata with `image_id`, `model_id`, `content_image_id`, and `best_seed`. Note that `model_id` is 0 or 1 and is the **label**  |
 | `data/test.csv` | Test metadata for evaluation queries. |
 
 ### Train CSV Columns
