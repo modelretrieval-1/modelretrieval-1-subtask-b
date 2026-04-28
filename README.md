@@ -15,7 +15,7 @@ Given a query image, rank image style transfer LoRA models by their ability to r
 **Note:** Cloning may take a long time due to the large number of query images
 
 ```bash
-git clone https://github.com/modelretrieval-1/modelretrieval-1-subtask-a.git
+git clone https://github.com/modelretrieval-1/modelretrieval-1-subtask-b.git
 ```
 
 ### 2. Install uv
