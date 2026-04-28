@@ -26,6 +26,7 @@ https://docs.astral.sh/uv/getting-started/installation/
 ### 3. Sync dependencies
 
 ```bash
+cd modelretrieval-1-subtask-b
 uv sync
 ```
 
