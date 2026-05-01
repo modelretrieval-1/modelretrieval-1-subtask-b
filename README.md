@@ -76,7 +76,7 @@ uv run python main.py download_content_images --all
 
 Downloaded files are saved to `data/content-images/` using zero-padded IDs such as `01.jpg`, `02.jpg`, `03.jpg`, etc.
 
-### (Optional) 6. Set up Civitai token and download models
+### 6. (Optional) Set up Civitai token and download models
 
 **Note: models are not strictly required**
 
