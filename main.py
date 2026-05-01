@@ -255,7 +255,7 @@ def download_content_images(
                 f"Failed image_id={numeric_id} ({photo_page_url}): {exc}",
                 err=True,
             )
-            raise typer.Exit(code=1)
+            continue
 
 
 if __name__ == "__main__":
