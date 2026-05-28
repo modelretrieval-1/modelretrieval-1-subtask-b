@@ -10,9 +10,9 @@ Given a query image, rank image style transfer LoRA models by their ability to r
 
 ## Quick Start
 
-### 0. !!Important!!: Install Git LFS
+### 0. IMPORTANT: Install Git LFS
 
-Before cloning this repo, lease install Git LFS as follows:
+Before cloning this repo, please install Git LFS as follows:
 
 [Windows](https://docs.github.com/en/repositories/working-with-files/managing-large-files/installing-git-large-file-storage?platform=windows) | [Mac](https://docs.github.com/en/repositories/working-with-files/managing-large-files/installing-git-large-file-storage?platform=mac) | [Linux](https://docs.github.com/en/repositories/working-with-files/managing-large-files/installing-git-large-file-storage?platform=linux)
 
